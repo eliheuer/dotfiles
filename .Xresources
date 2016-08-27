@@ -1,7 +1,7 @@
 URxvt.scrollBar:          off
 URxvt.letterSpace:        -1
 URxvt.font:               xft:Hack:size=12:antialias=true
-URxvt.internalBorder:     8
+URxvt.internalBorder:     16
 URxvt*selectToClipboard:  true
 URxvt*saveLines:          10000
 
