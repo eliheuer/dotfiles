@@ -3,6 +3,7 @@ set encoding=utf-8
 set nocompatible
 set number
 set laststatus=2
+set textwidth=80
 let g:airline_powerline_fonts = 1
 
 " auto indent
@@ -78,16 +79,12 @@ set lazyredraw
 " show line numbers
 set number
 
-" no line wrapping
-set nowrap
-
 " no folding
 set foldlevel=99
 set foldminlines=99
 
-" don't wrap long lines
-set nowrap
-
 " highlight column
 set cursorcolumn
-
+set cursorline
+hi cursorline cterm=none
+hi cursorlinenr ctermfg=red
