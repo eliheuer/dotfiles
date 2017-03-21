@@ -1,32 +1,12 @@
 scriptencoding utf-8
 set encoding=utf-8
-
-"           ██
-"          ░░
-"  ██    ██ ██ ██████████  ██████  █████
-" ░██   ░██░██░░██░░██░░██░░██░░█ ██░░░██
-" ░░██ ░██ ░██ ░██ ░██ ░██ ░██ ░ ░██  ░░
-"  ░░████  ░██ ░██ ░██ ░██ ░██   ░██   ██
-"   ░░██   ░██ ███ ░██ ░██░███   ░░█████
-"    ░░    ░░ ░░░  ░░  ░░ ░░░     ░░░░░
-"
-"  ▓▓▓▓▓▓▓▓▓▓
-" ░▓ author ▓ Eli <eliheuer@gmail.nu>
-" ░▓ site   ▓ http://eliheuer.info
-" ░▓ github ▓ https://github.com/eliheuer
-" ░▓▓▓▓▓▓▓▓▓▓
-" ░░░░░░░░░░
-
-
-
-
-" use vim settings, rather than vi settings
-" must be first, because it changes other options as a side effect
 set nocompatible
-
+set number
 set laststatus=2
 let g:airline_powerline_fonts = 1
 
+" auto indent
+set pastetoggle=<F2>
 
 " security
 set modelines=0
@@ -51,16 +31,6 @@ set ignorecase
 set smartcase
 set infercase
 
-" the /g flag on :s substitutions by default
-set gdefault
-
-" make backspace behave in a sane manner
-set backspace=indent,eol,start
-
-" searching
-set hlsearch
-set incsearch
-
 " use indents of 4 spaces
 set shiftwidth=2
 
@@ -76,26 +46,12 @@ set softtabstop=2
 " enable auto indentation
 set autoindent
 
-" remove trailing whitespaces and ^M chars
-autocmd FileType c,cpp,java,php,js,python,twig,xml,yml autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
-
-" let mapleader=","
-vnoremap <silent> <leader>y :w !xsel -i -b<CR>
-nnoremap <silent> <leader>y V:w !xsel -i -b<CR>
-nnoremap <silent> <leader>p :silent :r !xsel -o -b<CR>
-
 " ┏━╸┏━┓┏┳┓┏┳┓┏━┓┏┓╻╺┳┓┏━┓
 " ┃  ┃ ┃┃┃┃┃┃┃┣━┫┃┗┫ ┃┃┗━┓
 " ┗━╸┗━┛╹ ╹╹ ╹╹ ╹╹ ╹╺┻┛┗━┛
 
 " json pretty print
 command J :%!python -mjson.tool
-
-" remove trailing white space
-command Nows :%s/\s\+$//
-
-" remove blank lines
-command Nobl :g/^\s*$/d
 
 " toggle spellcheck
 command Spell :setlocal spell! spell?
@@ -112,10 +68,6 @@ set showmatch
 
 " disable startup message
 set shortmess+=I
-
-" syntax highlighting and colors
-color dracula
-syntax on
 
 " Show extra whitespace
 set list listchars=tab:»·,trail:·
