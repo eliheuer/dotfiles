@@ -13,7 +13,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monospace 12
+font pango:monospace 14
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -155,13 +155,13 @@ bindsym $mod+r mode "resize"
 bar {
     colors {
         background #222222
-        statusline #ff2222 #that neon blue
-        separator #ff2222
+        statusline #ff9922 #that neon blue
+        separator #222222
 
-        focused_workspace  #ff2222 #ff2222 #ffffff
-        active_workspace   #ff1111 #ff2211 #ffffff
-        inactive_workspace #ff3333 #ff2233 #ffffff
-        urgent_workspace   #ff0000 #ff2200 #ffffff
+        focused_workspace  #dd2222 #dd2222 #ffffdd
+        active_workspace   #22dd22 #22dd22 #ffddff
+        inactive_workspace #2222dd #2222dd #ddffff
+        urgent_workspace   #ff00ff #ff00ff #ffffff
     }
     #  status_command i3status
 }
