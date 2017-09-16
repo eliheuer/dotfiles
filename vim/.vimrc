@@ -33,16 +33,16 @@ set smartcase
 set infercase
 
 " use indents of 4 spaces
-set shiftwidth=2
+set shiftwidth=4
 
 " tabs are spaces, not tabs
 set expandtab
 
 " an indentation every four columns
-set tabstop=2
+set tabstop=4
 
 " let backspace delete indent
-set softtabstop=2
+set softtabstop=0
 
 " enable auto indentation
 set autoindent
