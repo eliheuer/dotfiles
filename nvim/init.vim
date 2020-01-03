@@ -1,12 +1,16 @@
 " colors primary
 colors dracula
 
+" set colorcolumn=81
+" highlight ColorColumn ctermbg=Red
+
 " fix copying in tmux
 set clipboard=unnamed
 
+" custom key bindings
+tnoremap <Esc> <C-\><C-n>
 inoremap jk <ESC>
 nmap ; :
-
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
@@ -26,7 +30,7 @@ nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
 
 let python_highlight_all = 1
 
-hi MatchParen cterm=none ctermbg=green ctermfg=blue
+"hi MatchParen cterm=none ctermbg=green ctermfg=blue
 
 let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
 
@@ -61,7 +65,7 @@ set autowrite                   " Automatically save before :next, :make etc.
 set autoread                    " Automatically reread changed files without asking me anything
 set laststatus=2
 set fileformats=unix,dos,mac    " Prefer Unix over Windows over OS 9 formats
-set showmatch                   " Do not show matching brackets by flickering
+"set showmatch                   " Do not show matching brackets by flickering
 set incsearch                   " Shows the match while typing
 set hlsearch                    " Highlight found searches
 set ignorecase                  " Search case insensitive...
