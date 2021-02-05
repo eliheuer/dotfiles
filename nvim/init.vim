@@ -1,5 +1,8 @@
-" colors primary
-colors dracula
+"colors primary
+"colors dracula
+"colors arcman
+"colors moonfly
+colors jellybeans
 
 " set colorcolumn=81
 " highlight ColorColumn ctermbg=Red
