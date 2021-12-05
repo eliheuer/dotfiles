@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/eli/.config/gtk-3.0'
+let g:netrw_dirhist_5='/home/eli/.config/i3'
+let g:netrw_dirhist_4='/home/eli/Web/elih.blog/themes'
+let g:netrw_dirhist_3='/home/eli/Web/elih.blog'
+let g:netrw_dirhist_2='/home/eli/Web/elih.blog/tags'
+let g:netrw_dirhist_1='/home/eli/Rust/Q/Qglif/src/renderer'

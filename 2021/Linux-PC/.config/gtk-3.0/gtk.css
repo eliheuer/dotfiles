@@ -1,0 +1,10 @@
+VteTerminal, vte-terminal {
+    padding: 16px;
+}
+#pane #menubar, 
+#pane #menubar GtkMenuShell, 
+#pane #menubar GtkMenuShell * 
+{ 
+    font-family: "Input"; 
+    font-size: 24px;
+} 
